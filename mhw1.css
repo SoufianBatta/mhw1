@@ -1,3 +1,75 @@
-body p {
+body {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Delicious Handrawn', monospace;
+}
+header {
+    height: 600px;
+    width: 100vw;
+    background-image: url('header_BG.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+header #overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+header nav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80%;
+    right: 0;   
+}
+
+header nav #menu{
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: relative;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 100%;
+
+}
+
+#menu a{
+/*FONT*/
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: aliceblue;
+    text-align: center;
+    text-transform: uppercase;
+/*PADDING*/
+    padding: 5px;
+/*BORDER*/
+    border: 2px solid rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+/*POSITION*/
+    position: relative;
+    right: -5px;
+/*DIMENSION*/
+    width: 90%;
+
+}
+
+header #header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
