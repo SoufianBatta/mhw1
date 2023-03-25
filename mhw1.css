@@ -1,5 +1,5 @@
 body {
-    margin: 0px;
+    margin: 15px;
     padding: 0px;
     font-family: 'Delicious Handrawn', monospace;
 }
@@ -95,6 +95,8 @@ header nav {
     justify-content: flex-start;
     align-items: center;
     font-size: 2vw;
+    position: static;
+    top: 100%;
 }
 #title  {
     display: inline-flex;
