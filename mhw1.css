@@ -1,8 +1,17 @@
+/*------------------------------------------------BODY-----------------------------------------------------*/
+
 body {
-    margin: 15px;
+    margin: 0px;
     padding: 0px;
     font-family: 'Delicious Handrawn', monospace;
+    background-color: rgb(240, 230, 217);
+    color: rgb(240, 230, 217);
 }
+
+
+  
+/*------------------------------------------------HEADER-----------------------------------------------------*/
+
 header {
     height: 600px;
     width: 100vw;
@@ -16,6 +25,8 @@ header {
     align-items: flex-start;
 }
 
+/*--------------------OVERLAY-------------------*/
+
 #overlay {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
@@ -24,6 +35,8 @@ header {
     right: 0;
     bottom: 0;
 }
+
+/*--------------------MENU----------------------*/
 
 header nav {
     position: absolute;
@@ -47,35 +60,29 @@ header nav {
 }
 
 #menu a{
-/*FONT*/
+    /*FONT*/
     font-family: '8BIT WONDER', sans-serif;
     font-weight: bolder;
-    color: aliceblue;
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
-/*PADDING*/
+    /*PADDING*/
     margin: 20px;
-/*BORDER*/
-    border: 2px solid rgb(90, 5, 107);
+    /*BORDER*/
+    border: 2px solid  rgba(243, 148, 172, 1);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-/*POSITION*/
+    /*POSITION*/
     position: relative;
     right: -20px;
-/*DIMENSION*/
+    /*DIMENSION*/
     width: 90%;
     height: 50px;
-/*DISPLAY*/
+    /*DISPLAY*/
     display: flex;
 }
-#menu a:hover {
-    cursor: crosshair;
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
-    border: 2px solid rgb(134, 9, 159);
-    background-color: rgba(255, 255, 255, 0.20);
-}
+
+/*--------------------HEADER_TEXT----------------------*/
 
 #header-text {
     position: absolute;
@@ -83,12 +90,12 @@ header nav {
     left: 0;
     right: 20%;
     height: 100%;
-    color: aliceblue;
     display: flex;
     flex-direction: column;
     font-family: '8BIT WONDER', sans-serif;
     justify-content: space-between;
 }
+
 #pre_title  {
     display: inline-flex;
     height: 20%;
@@ -98,6 +105,7 @@ header nav {
     position: static;
     top: 100%;
 }
+
 #title  {
     display: inline-flex;
     height: 40%;
@@ -115,6 +123,89 @@ header nav {
     font-size: 1.3vw;
 }
 
-.head{
-    color: blue;
+/*------------------------------------------------SECTION-----------------------------------------------------*/
+
+section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    height: 800px;
+    width: 100%;
+}
+   
+/*--------------------TOPIC----------------------*/
+
+#topic_container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------------NEWS-----------------------*/
+
+#news-container {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-right: 1px dotted rgb(3, 24, 83);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#news-container .news{
+    background-color: rgba(243, 148, 172, 0.589);
+    height: 20%;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10%;
+    margin-left: -10%;
+}
+
+#news-container span {
+    margin: 10px;
+    position: relative;
+    width: fit-content;
+    height: 60%;
+}
+
+#news-container h5 {
+    margin: 5px;
+    height: 20%;
+    text-align: center;
+    font-size: 1em;
+}
+
+#news-container .continue_reading {
+    height: 20%;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*--------------------------------------------------------FOOTER-----------------------------------------------------------*/
+
+FOOTER {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(9, 1, 78, 0.89);
+}
+/*--------------------------------------------------------ANIMATION-----------------------------------------------------------*/
+
+#news-container .news:hover {
+    background-color: cornsilk;
+    color: black;
+    border: 1px dotted black;
+}
+
+#menu a:hover {
+    cursor: crosshair;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border: 5px groove rgba(240, 123, 107, 0.89);
+    background-color: rgba(255, 255, 255, 0.20);
 }
