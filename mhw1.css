@@ -13,8 +13,8 @@ body {
 /*------------------------------------------------HEADER-----------------------------------------------------*/
 
 header {
-    height: 600px;
-    width: 100vw;
+    height: fit-content;
+    width: 100%;
     background-image: url('7a1b84b0d02802cca66d976556d8699d.gif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -31,19 +31,16 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
 }
 
 /*--------------------MENU----------------------*/
 
 header nav {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 80%;
-    right: 0;   
+    height: auto; 
+    width: auto; 
 }
 
 #menu{
@@ -51,35 +48,35 @@ header nav {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: flex-start;
     position: relative;
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
-    height: 100%;
-
+    height: fit-content;
 }
 
 #menu a{
     /*FONT*/
     font-family: '8BIT WONDER', sans-serif;
     font-weight: bolder;
-    justify-content: center;
-    align-items: center;
+    font-size: calc(1vw + 1vh);
+    text-align: center;
     text-transform: capitalize;
+    /*MARGIN*/
+    margin-top: calc(.7vw + .7vh);
+    margin-bottom: calc(.7vw + .7vh);
     /*PADDING*/
-    margin: 20px;
+    padding: 1vw;
     /*BORDER*/
     border: 2px solid  rgba(243, 148, 172, 1);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
     /*POSITION*/
     position: relative;
-    right: -20px;
     /*DIMENSION*/
-    width: 90%;
-    height: 50px;
+    width: 100%;
+    height: fit-content
     /*DISPLAY*/
-    display: flex;
 }
 
 /*--------------------HEADER_TEXT----------------------*/
@@ -93,34 +90,23 @@ header nav {
     display: flex;
     flex-direction: column;
     font-family: '8BIT WONDER', sans-serif;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 #pre_title  {
-    display: inline-flex;
-    height: 20%;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 2vw;
-    position: static;
-    top: 100%;
+    height: fit-content;
+    font-size: calc(1vh + 1vw);
 }
 
 #title  {
-    display: inline-flex;
-    height: 40%;
-    justify-content: center;
-    align-items: center;
-    padding-top: 2%;
-    font-size: 3.5vw;
+    height: fit-content;
+    font-size: calc(1.5vh + 2vw);
 }
 
 #post_title  {
-    display: inline-flex;
-    height: 20%;
-    align-items: flex-start;
-    justify-content: center;
-    font-size: 1.3vw;
+    height: fit-content;
+    font-size: calc(.5vh + .8vw);
 }
 
 /*------------------------------------------------SECTION-----------------------------------------------------*/
@@ -129,7 +115,7 @@ section {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
-    height: 800px;
+    height: auto;
     width: 100%;
 }
    
@@ -147,17 +133,39 @@ section {
 .topic {
     width: 90%;
     height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 30px;
+    justify-content: space-around;
 }
 
 .topic img {
-    height: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    height: 75%;
+    width: 50%;
+    display: inline-block;
+    opacity: 50%;
+}
+
+.topic p {
+    height: fit-content;
+    width: 40%;
+    text-align: start;
+    color: black;
+    text-transform: capitalize;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 1.4vw;
+}
+.Game_name {
+    font-size: 1.8vw;
+    font-weight: bolder;
+    text-transform: capitalize;
+    color: rgb(9, 1, 78);
 }
 /*----------------------NEWS-----------------------*/
 
 #news-container {
-    height: 100%;
+    height: auto;
     width: 15%;
     display: flex;
     flex-direction: column;
@@ -169,7 +177,7 @@ section {
 
 #news-container .news{
     background-color: rgba(243, 148, 172, 0.589);
-    height: 20%;
+    height: fit-content;
     width: 90%;
     border-radius: 10px;
     display: flex;
@@ -178,26 +186,30 @@ section {
     justify-content: flex-start;
     margin-top: 10%;
     margin-left: -10%;
+    text-transform: capitalize;
 }
 
 #news-container span {
     margin: 10px;
     position: relative;
     width: fit-content;
-    height: 60%;
+    height: fit-content;
+    left: 5%;
+    font-size: 1vw;
 }
 
 #news-container h5 {
     margin: 5px;
     height: 20%;
     text-align: center;
-    font-size: 1em;
+    font-size: 1vw;
 }
 
 #news-container .continue_reading {
     height: 20%;
     font-weight: bold;
     cursor: pointer;
+    
 }
 /*--------------------------------------------------------FOOTER-----------------------------------------------------------*/
 
@@ -205,6 +217,13 @@ FOOTER {
     height: 150px;
     width: 100%;
     background-color: rgba(9, 1, 78, 0.89);
+    text-align: center;
+}
+FOOTER DIV {
+    position: relative;
+    word-spacing: 10%;
+    top: 50%;
+    font-size: 200%;
 }
 /*--------------------------------------------------------ANIMATION-----------------------------------------------------------*/
 
@@ -214,10 +233,23 @@ FOOTER {
     border: 1px dotted black;
 }
 
+#news-container .continue_reading:hover {
+    border: 3px dotted black;
+}
+
+.topic:hover .Game_name {
+    color: rgb(240, 123, 107);
+}
+
+.topic:hover img {
+    opacity: 100%;
+}
+
+
 #menu a:hover {
     cursor: crosshair;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    border: 5px groove rgba(240, 123, 107, 0.89);
+    border: 1px groove rgba(240, 123, 107, 0.89);
     background-color: rgba(255, 255, 255, 0.20);
 }
