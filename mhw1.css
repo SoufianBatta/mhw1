@@ -293,22 +293,57 @@ section {
 
 FOOTER {
 
-    height: 150px;
+    height: 20vw;
     width: 100%;
 
     background-color: rgba(9, 1, 78, 0.89);
 
-    text-align: center;
-    font-size: 200%;
+    font-size: calc(.5vh + .8vw);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 
 }
-FOOTER DIV {
 
+#info {
+    display: flex;
+    flex-direction: column;
+
+    width: 25%;
+    height: 100%;
+}
+
+#back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+#author{
+    height: 100%;
+    width: 25%;
+
+    text-align: center;
+}
+
+#info a{
     position: relative;
-    top: 50%;
+    top: 40%;
+}
+#back a {
+    color: bisque;
+    text-decoration: none;
+    margin-left: 10%;
+}
 
-    word-spacing: 10%;
-
+#author span {
+    position: relative;
+    bottom: -80%;
+    right: -10%;
 }
 /*--------------------------------------------------------ANIMATION-----------------------------------------------------------*/
 
@@ -332,6 +367,13 @@ FOOTER DIV {
 
 
 #menu a:hover {
+    cursor: crosshair;
+    color: rgb(255, 255, 255);
+    border: 1px groove rgba(240, 123, 107, 0.89);
+    background-color: rgba(255, 255, 255, 0.20);
+}
+
+#info a:hover {
     cursor: crosshair;
     color: rgb(255, 255, 255);
     border: 1px groove rgba(240, 123, 107, 0.89);
