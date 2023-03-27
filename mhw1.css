@@ -1,11 +1,14 @@
 /*------------------------------------------------BODY-----------------------------------------------------*/
 
 body {
+
     margin: 0px;
-    padding: 0px;
+
     font-family: 'Delicious Handrawn', monospace;
-    background-color: rgb(240, 230, 217);
     color: rgb(240, 230, 217);
+
+    background-color: blanchedalmond;
+
 }
 
 
@@ -13,217 +16,299 @@ body {
 /*------------------------------------------------HEADER-----------------------------------------------------*/
 
 header {
+
     height: fit-content;
     width: 100%;
+
     background-image: url('7a1b84b0d02802cca66d976556d8699d.gif');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
     position: relative;
+
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-start;
+
 }
 
 /*--------------------OVERLAY-------------------*/
 
 #overlay {
+
     background-color: rgba(0, 0, 0, 0.3);
+
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+
 }
 
 /*--------------------MENU----------------------*/
 
 header nav {
-    height: auto; 
-    width: auto; 
+
+    height: 100%; 
+    width: 20%; 
+
 }
 
 #menu{
+
     background-color: rgba(255, 255, 255, 0.1);
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-start;
+
     position: relative;
+
     border-bottom-left-radius: 50px;
     border-top-left-radius: 50px;
+
     height: fit-content;
 }
 
 #menu a{
-    /*FONT*/
-    font-family: '8BIT WONDER', sans-serif;
+
+    font-family: 'Alkatra', cursive;
     font-weight: bolder;
     font-size: calc(1vw + 1vh);
     text-align: center;
     text-transform: capitalize;
-    /*MARGIN*/
+    font-style: normal;
+    font-weight: lighter;
+
     margin-top: calc(.7vw + .7vh);
     margin-bottom: calc(.7vw + .7vh);
-    /*PADDING*/
+
     padding: 1vw;
-    /*BORDER*/
+
     border: 2px solid  rgba(243, 148, 172, 1);
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
-    /*POSITION*/
+
     position: relative;
-    /*DIMENSION*/
-    width: 100%;
+
+    width:80%;
     height: fit-content
-    /*DISPLAY*/
+
 }
 
 /*--------------------HEADER_TEXT----------------------*/
 
 #header-text {
+
     position: absolute;
     top: 0;
     left: 0;
     right: 20%;
+
     height: 100%;
+
     display: flex;
     flex-direction: column;
-    font-family: '8BIT WONDER', sans-serif;
     justify-content: space-around;
+
+    font-family: '8BIT WONDER', sans-serif;
     align-items: flex-start;
+    font-style: oblique;
+    color: rgba(255, 241, 219, 0.747);
+    text-align: center;
+    line-height: normal;
+
 }
 
 #pre_title  {
-    height: fit-content;
+
     font-size: calc(1vh + 1vw);
+
 }
 
 #title  {
-    height: fit-content;
+
     font-size: calc(1.5vh + 2vw);
+
+
 }
 
 #post_title  {
-    height: fit-content;
+
     font-size: calc(.5vh + .8vw);
+
+
 }
 
 /*------------------------------------------------SECTION-----------------------------------------------------*/
 
 section {
+
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+
     height: auto;
     width: 100%;
+
 }
    
 /*--------------------TOPIC----------------------*/
 
 #topic_container {
+
     height: 100%;
     width: 80%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .topic {
+
     width: 90%;
     height: 100%;
+
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 30px;
     justify-content: space-around;
+
+    margin: 30px;
+
 }
 
 .topic img {
+
     height: 75%;
     width: 50%;
+
     display: inline-block;
+
     opacity: 50%;
+
 }
 
 .topic p {
+
     height: fit-content;
     width: 40%;
+
     text-align: start;
     color: black;
     text-transform: capitalize;
-    font-family: 'Edu NSW ACT Foundation', cursive;
     font-size: 1.4vw;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-align: left;
+
 }
 .Game_name {
+
     font-size: 1.8vw;
-    font-weight: bolder;
     text-transform: capitalize;
-    color: rgb(9, 1, 78);
+    font-weight: 800;
+    color: rgb(13, 0, 122);
+
 }
 /*----------------------NEWS-----------------------*/
 
 #news-container {
+
     height: auto;
     width: 15%;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
     border-right: 1px dotted rgb(3, 24, 83);
+
     font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    font-size: 1vw;
+    text-align: center;
 }
 
 #news-container .news{
+
     background-color: rgba(243, 148, 172, 0.589);
+
     height: fit-content;
     width: 90%;
+
     border-radius: 10px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+
     margin-top: 10%;
     margin-left: -10%;
-    text-transform: capitalize;
+
+ 
 }
 
 #news-container span {
+
     margin: 10px;
+    left: 5%;
+
     position: relative;
+
     width: fit-content;
     height: fit-content;
-    left: 5%;
-    font-size: 1vw;
+
+    
 }
 
 #news-container h5 {
+
     margin: 5px;
+
     height: 20%;
-    text-align: center;
-    font-size: 1vw;
+
 }
 
 #news-container .continue_reading {
+
     height: 20%;
+
     font-weight: bold;
+
     cursor: pointer;
     
 }
 /*--------------------------------------------------------FOOTER-----------------------------------------------------------*/
 
 FOOTER {
+
     height: 150px;
     width: 100%;
+
     background-color: rgba(9, 1, 78, 0.89);
+
     text-align: center;
+    font-size: 200%;
+
 }
 FOOTER DIV {
+
     position: relative;
-    word-spacing: 10%;
     top: 50%;
-    font-size: 200%;
+
+    word-spacing: 10%;
+
 }
 /*--------------------------------------------------------ANIMATION-----------------------------------------------------------*/
 
@@ -249,7 +334,6 @@ FOOTER DIV {
 #menu a:hover {
     cursor: crosshair;
     color: rgb(255, 255, 255);
-    text-transform: uppercase;
     border: 1px groove rgba(240, 123, 107, 0.89);
     background-color: rgba(255, 255, 255, 0.20);
 }
